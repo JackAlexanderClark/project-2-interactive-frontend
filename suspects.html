@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Suspects</title>
   </head>
   <body>
@@ -16,16 +17,15 @@
     <!-- Creating bootstrap offcanvas right navbar -->
     <section class="right-nav-bar">
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                Offcanvas right
+                <i class="fas fa-map-signs"></i> Offcanvas right 
             </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                ...
+                <i class="fas fa-map-signs"></i>...
             </div>
             </div>
     </section>
@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3>
-                        How to play the Game
+                        How to play the Game <i class="fas fa-dice"></i>
                     </h3>
                     <ol>
                         <li>Firstly, read up on the events of the crime, learn and memorise the circumstances.</li>
@@ -48,12 +48,15 @@
                 </div>
                 <div class="col-md-6">
                     <h3>
-                        The Crime
+                        The Crime <i class="fa-solid fa-magnifying-glass"></i></i>
                     </h3>
                     <ul>
-                        <li>At approximately 1:30am your house was petrol bombed</li>
-                        <li>A figure was seen loitering the area, at 12:00am</li>
-                        <li>A black leather wallet was left at the crime scene</li>
+                        <li>At approximately 1:30am your house was petrol bombed.</li>
+                        <li>You were knocked unconcious, you've been in a coma - your memories are missing.</li>
+                        <li>A figure was seen loitering the area, at 12:00am.</li>
+                        <li>A black leather wallet was left at the crime scene.</li>
+                        <li>Police have interviewed multiple witnesses. You can read their statements.</li>
+                        <li>Several items were discovered at the scene. You can inspect the clues.</li>
                     </ul>
                 </div>
             </div>
@@ -74,7 +77,7 @@
                             <h2 class="suspect-name">
                                 Dr. Finchley Nightingale
                             </h2>
-                            <p>Click here for more information</p>
+                            <button type="button">Click here for more information!</button>
                         </div>        
                     </div>
                 </div>
@@ -89,7 +92,7 @@
                             <h2 class="suspect-name">
                                 Nigel Rochdale
                             </h2>
-                            <p>Click here for more information</p>
+                            <button type="button">Click here for more information!</button>
                         </div>        
                     </div>
                 </div>
@@ -104,17 +107,56 @@
                         <h2 class="suspect-name">
                             Mrs. Mathilda Harper
                         </h2>
-                        <p>
-                            Click here for more information
-                        </p>
+                        <button type="button">Click here for more information!</button>
                     </div>        
                 </div>
             </div>
         </div>
         <div class='row'>
-            <div class='col-xs-12 col-md-4'>Suspect column 4</div>
-            <div class='col-xs-12 col-md-4'>Suspect column 5</div>
-            <div class='col-xs-12 col-md-4'>Suspect column 6</div>
+            <div class='col-xs-12 col-md-4'>
+                <div class="container">
+                    <div class="col">
+                        <div class="row1">
+                            <img src="assets/images/mr cruel.jpg" alt="Mr Cruel" class="suspect-card">
+                        </div>
+                        <div class="row2">
+                            <h2 class="suspect-name">
+                                Mr Cruel
+                            </h2>
+                            <button type="button">Click here for more information!</button>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-12 col-md-4'>
+                <div class="container">
+                    <div class="col">
+                        <div class="row1">
+                            <img src="assets/images/zodiac.jpg" alt="Mr Cruel" class="suspect-card">
+                        </div>
+                        <div class="row2">
+                            <h2 class="suspect-name">
+                                The Zodiac
+                            </h2>
+                            <button type="button">Click here for more information!</button>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-12 col-md-4'>
+            <div class="container">
+                <div class="col">
+                    <div class="row1">
+                        <img src="assets/images/hoodie.jpg" alt="Mr Cruel" class="suspect-card">
+                    </div>
+                    <div class="row2">
+                        <h2 class="suspect-name">
+                            Homeless man
+                        </h2>
+                        <button type="button">Click here for more information!</button>
+                    </div>        
+                </div>
+            </div>
         </div>
         <div class='row'>
             <div class='col-xs-12 col-md-4'>Suspect column 7</div>
@@ -123,8 +165,15 @@
         </div>
     </div>
 
-    
+    <!-- Calls the guess function, 2 guesses available per round -->/workspace/project-2-interactive-frontend/assets/js
+    <section>
+        <h2>Chose your main suspect:</h2>
+            <p>Once you have analysed the evidence police report. Think carefully before entering their full name into the box below and pressing enter.</p>
+                <input type="text">
+                <input type="submit">
+    </section>
 
+    <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

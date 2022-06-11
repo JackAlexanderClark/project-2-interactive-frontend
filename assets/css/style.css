@@ -13,6 +13,7 @@ h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 25px;
+    color: crimson;
 }
 
 li {
@@ -45,6 +46,7 @@ p {
     font-weight: lighter;
     font-style: italic;
     font-size: 20px;
+    color:blueviolet;
 }
 
 .right-nav-bar {

@@ -2,10 +2,15 @@ $(document).ready(function(){
     console.log("Document fully loaded - jQuery is ready");
   });
 
-  const correctSuspect = suspect1;
+// Enter player name to return with your answer
+var yourName = window.prompt("Enter your name: "); 
+alert("Your name is " + yourName);
 
-  let attempts = 0;
-  document.getElementById("guessChoice").onclick = checkGuess();
+
+const correctSuspect = suspect1;
+
+let attempts = 0;
+document.getElementById("guessChoice").onclick = checkGuess();
   
 function checkGuess() {
     let playerGuess = guess.value;
@@ -30,3 +35,4 @@ function checkGuess() {
     gameAttempts.innerHTML = '3';
     feedback.textContent = "Game reset you have 3 more guesses to identify the suspect";
   };
+
