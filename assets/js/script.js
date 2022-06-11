@@ -1,20 +1,17 @@
 $(document).ready(function(){
     console.log("Document fully loaded - jQuery is ready");
   });
-  
 
   const correctSuspect = suspect1;
+
   let attempts = 0;
-  // One guess gameloop
   document.getElementById("guessChoice").onclick = checkGuess();
   
-  //Primary checking 
-  function checkGuess() {
+function checkGuess() {
     let playerGuess = guess.value;
     if (attempts === 3) {
       feedback.textContent = "Game over! Failed. You have used all 3 guesses!";
       console.log("GAME FAILED 3 GUESSES USED");
-      //Need to restart the game using the restartGame() function
       return; 
     }
     if (playerGuess === suspect8) {
