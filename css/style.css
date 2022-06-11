@@ -1,0 +1,351 @@
+/*----- Importing CSS fonts for styling and other CDN----*/
+@font-face {
+    font-family : 'Julius Sans One';
+    font-style : normal;
+    font-weight : 375;
+    src : url(http://fonts.gstatic.com/s/juliussansone/v12/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsS.ttf) format('truetype');
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/*---- Here we are creating the interactive nav bar--*/
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab:hover {
+    background-color: #ecc1e1;
+    position: relative;
+}
+
+.active {
+    display: block;
+    background-color: #ecc1e1;
+    position: relative;
+    border-style: dashed;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.welcome {
+    padding: 20px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#paragraph-bio {
+    font-size: 30px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    text-align: center;
+    color: black;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+
+.social-networks {
+    padding: 10px;
+    size: 100px;
+    position: relative;
+    margin: 10px;
+}
+
+#googleMap {
+    width: 100%; 
+    height: 400px;
+}
+
+/* CSS styling for our contact form, to contact the artist with either personalised requests or comments. */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    position: relative;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 8px;
+    margin-bottom: 12px; 
+    resize: vertical;
+    border: 2px solid #ece8f8;
+}
+  
+/*Styling the submit button*/
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #ece8f8;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #97989e;
+    color: white;
+    padding: 11px 21px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#container-form {
+      color: #410cd3;
+}
+  
+/* When moving the mouse over the submit button, adds a red colour. */
+input[type=submit]:hover {
+    background-color: #add8e6;
+}
+input[type=reset]:hover {
+    background-color: #add8e6;
+}
+  
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 6px;
+    background-color: #e8f8ec;
+    padding: 18px;
+    box-shadow: #ece8f8;
+    backface-visibility: hidden;
+}
+
+.menu {
+    color:#04AA6D;
+    font-weight: bold;
+}
+
+#shop_contact {
+    color:aqua;
+    font-size: xx-large;
+}
+
+/*--Navigation Bar Styling--*/
+.navbar {
+    border: 10px solid black;
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+    position: relative;
+}
+
+header {
+    background: #e8f4f8;
+    padding: 2px;
+    border: 10px solid #a18edd;
+    border-style: ridge;
+    padding: 40px;
+    text-align: center;
+    margin:30px;
+}
+
+#web-logo {
+    float: left;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 85%;
+    height: auto;
+    object-fit: contain;
+    backface-visibility: hidden;
+    position: relative;
+}
+
+header:after {
+    content: '';
+    display: table;
+    clear: both;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    object-fit: contain;
+}
+
+p {
+    margin: 20px;
+    padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav li {
+    display: inline-block; 
+    margin-left: 70px;
+    margin: 0 35px;
+    padding-top: 25px;
+    position: relative;
+}
+
+#title-effect {
+    color: #bf00ff; 
+    font-family:'Times New Roman', Times, serif; 
+    font-size: 76px; 
+    font-weight: normal; 
+    line-height: 52px;
+    margin: 0 0 16px; 
+    text-shadow: 5px 0 0 #add8e6;
+    position: relative;
+    backface-visibility: hidden;
+}
+
+#columns {
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 768px){
+    .parent {
+        display: flex;
+    }
+}
+
+.child {
+    border: 1px solid blueviolet;
+    float: left;
+    width: 50%;
+    box-sizing: border-box; 
+}
+
+#gallery-effect {
+    margin: 0;
+    margin-bottom: 25rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/*-- Careful DOM selection --*/
+.wrapper > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+}
+
+.wrapper > .content {
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    background: rbga(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > img,
+.wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.wrapper:hover > img.blur {
+    filter: blur(5px);
+}
+
+.wrapper:hover > img.zoom {
+    transform: scale(1.1);
+}
+
+.wrapper > .content.fade {
+    opacity: 0; 
+}
+
+.wrapper:hover > .content.fade {
+    opacity: 1; 
+}
+
+.wrapper > .content.slide-left {
+    transform: translateX(-100%);
+}
+
+.wrapper:hover > .content.slide-left {
+    transform: translateX(0);
+}
+
+.wrapper:hover > img.gray {
+    filter: grayscale(0.8);
+}
+
+/*-- Styling and sizing for images--*/
+.jpg {
+    width: 200px;
+    height: 250px;
+    position: relative;
+}
+
+.video {
+    width: 250px; 
+    height: 300px;
+    position: relative;
+}
+
+/*-- Outside border to act like a picture frame for whole website --*/
+html {
+    border: 13px black solid;
+}
+
+/*-- Code from Stack overflow - https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile --*/
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
