@@ -36,3 +36,8 @@ function checkGuess() {
     feedback.textContent = "Game reset you have 3 more guesses to identify the suspect";
   };
 
+// jQuery popup text function
+
+function toggleText () {
+  $('#clue-1').toggle()
+}
