@@ -2,10 +2,13 @@ $(document).ready(function(){
     console.log("Document fully loaded - jQuery is ready");
   });
 
+const logReady = "FUCKING READY CUNT SAKE";
+console.log(logReady);
+
+
 // Enter player name to return with your answer
 var yourName = window.prompt("Enter your name: "); 
 alert("Your name is " + yourName);
-
 
 const correctSuspect = suspect1;
 
