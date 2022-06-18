@@ -53,7 +53,7 @@ function checkGuess() {
 // fadeIn method takes in 3 paramereters; speed, easing and callback.
 // callback function after
 $('#question-fade-in').click(function (){
-  $(this).fadeIn("slow", "linear", function ())
+  $(this).fadeIn("slow", "linear")
 });
 
 // potential idea on how to enlarge suspect card 
@@ -63,4 +63,4 @@ $("button").click(function(){
     height: '+=150px',
     width: '+=150px'
   });
-}); 
+});

@@ -53,19 +53,19 @@ p {
 }
 
 .container {
-    padding: 10px;
     border: solid darkgrey 2px;
 }
 
 .suspect-card {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 250px;
+    padding: 5px;
 }
 
 .suspect-name {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 30px;
     color: whitesmoke;
 }
 
