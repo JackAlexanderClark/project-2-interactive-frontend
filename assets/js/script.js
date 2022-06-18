@@ -7,10 +7,10 @@ console.log(logReady);
 
 
 // Enter player name to return with your answer
-var yourName = window.prompt("Enter your name: "); 
+//var yourName = window.prompt("Enter your name: "); 
 alert("Your name is " + yourName);
 
-const correctSuspect = suspect1;
+//const correctSuspect = suspect1;
 
 let attempts = 0;
 document.getElementById("guessChoice").onclick = checkGuess();
@@ -41,6 +41,6 @@ function checkGuess() {
 
 // jQuery popup text function
 
-function toggleText () {
-  $('#clue-1').toggle()
-}
+//function toggleText () {
+// $('#clue-1').toggle()
+//
