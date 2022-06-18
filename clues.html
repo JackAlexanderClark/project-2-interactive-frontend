@@ -13,21 +13,27 @@
 
     <title>Suspects</title>
   </head>
+
   <body background="assets/images/black-board background.jpg">
+
+  <div id="question-fade-in">
+      <h2 style="text-align: center; color: azure;">Here are the pieces of evidence collected from the scene of the crime.<br> Click to unearth more details and clues.</h2>
+  </div>
 
     <!-- Navigation bar -->
     <section class="right-nav-bar">
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click here to navigate between different areas:</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasRightLabel">
-              <i class="fas fa-map-signs"></i> Offcanvas right 
+              <i class="fas fa-map-signs"></i> 
+              <br>
+              Use this bar to navigate between different areas of your investigation:
           </h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
 
-              <i class="fas fa-map-signs"></i>
               <ul class="navbar">
                   <li><a href="suspects.html">Suspects</a></li>
                   <li><a class="active" href="clues.html">Clues</a></li>>

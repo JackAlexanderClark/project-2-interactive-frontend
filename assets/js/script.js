@@ -5,19 +5,25 @@ $(document).ready(function(){
 const logReady = "FUCKING READY CUNT SAKE";
 console.log(logReady);
 
-$(document).ready(function(){
-  $("button").click(function(){
-    var div = $("div");
-    div.animate({height: '300px', opacity: '0.4'}, "slow");
-    div.animate({width: '300px', opacity: '0.8'}, "slow");
-    div.animate({height: '100px', opacity: '0.4'}, "slow");
-    div.animate({width: '100px', opacity: '0.8'}, "slow");
-  });
+// investigate correct syntax for jq 3.6
+$(window).load(function (){
+  $(".question-fade-in").fadeIn("slow", "linear").fadeOut("slow")
 });
 
+
+//$(document).ready(function(){
+//  $("button").click(function(){
+//    var div = $("div");
+//    div.animate({height: '300px', opacity: '0.4'}, "slow");
+//    div.animate({width: '300px', opacity: '0.8'}, "slow");
+//    div.animate({height: '100px', opacity: '0.4'}, "slow");
+//   div.animate({width: '100px', opacity: '0.8'}, "slow");
+//  });
+//});
+
 // Enter player name to return with your answer
-// var yourName = window.prompt("Enter your name: "); 
-alert("Your name is " + yourName);
+//var yourName = window.prompt("Enter your name: "); 
+//alert("Your name is " + yourName);
 
 // const correctSuspect = suspect9;
 // vicar is the correct suspect
@@ -52,9 +58,6 @@ function checkGuess() {
 // jQuery popup text function
 // fadeIn method takes in 3 paramereters; speed, easing and callback.
 // callback function after
-$('#question-fade-in').click(function (){
-  $(this).fadeIn("slow", "linear")
-});
 
 // potential idea on how to enlarge suspect card 
 $("button").click(function(){
@@ -63,4 +66,4 @@ $("button").click(function(){
     height: '+=150px',
     width: '+=150px'
   });
-});
+});}

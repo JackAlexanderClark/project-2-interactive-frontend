@@ -1,26 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/df070f2a43.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <title>Suspects</title>
-  
-</head>
+  </head>
 
   <!-- Universal blackboard background for the theme -->
   <body background="assets/images/black-board background.jpg">
 
-    <div id="question-fade-in">
-        <h2 style="text-align: center; color: azure;">Who did this to you? Explore your memories. Find they who are guilty.</h2>
+    <div class="question-fade-in">
+        <h2 style="text-align: center; color: azure;">Who did this to you? Explore your memories. Find they who are guilty. </h2>
     </div>
 
     <section class="title">
@@ -29,11 +27,13 @@
 
     <!-- Creating bootstrap offcanvas right navbar -->
     <section class="right-nav-bar">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+        <buttons class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click here to navigate between different areas:</button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                <i class="fas fa-map-signs"></i> Offcanvas right 
+                <i class="fas fa-map-signs"></i> 
+                <br>
+                Use this bar to navigate between different areas of your investigation: 
             </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -87,10 +87,11 @@
                 <div class="container">
                     <div class="col">
                         <div class="row1">
-                            <img src="assets/images/Dr Finchley Nightingale.jpeg" alt="Dr. Finchley Nightingale" class="suspect-card">
+                            <img src="assets/images/Dr Finchley Nightingale.jpeg" style="height: 300px; width: 350px;" alt="Dr. Finchley Nightingale" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h2 class="suspect-name">
+                            <h3 style="text-align: center; color: azure;">The Psychiatrist</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Dr. Finchley Nightingale
                             </h2>
                             <button type="button">Click here for more information!</button>
@@ -102,10 +103,11 @@
                 <div class="container">
                     <div class="col">
                         <div class="row1">
-                            <img src="assets/images/Nigel Rochdale Homeless Sketch.jpeg" alt="Nigel Rochdale" class="suspect-card">
+                            <img src="assets/images/Nigel Rochdale Homeless Sketch.jpeg" style="height: 300px; width: 350px;" alt="Nigel Rochdale" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h2 class="suspect-name">
+                            <h3 style="text-align: center; color: azure;">The Homeless Man</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Nigel Rochdale
                             </h2>
                             <button type="button">Click here for more information!</button>
@@ -117,12 +119,13 @@
                 <div class="container">
                     <div class="col">
                         <div class="row1">
-                            <img src="assets/images/Matilda Harper.jpeg" alt="Mrs. Matilda Harper" class="suspect-card">
+                            <img src="assets/images/Matilda Harper.jpeg" style="height: 300px; width: 350px;" alt="Mrs. Matilda Harper" class="suspect-card">
                         </div>
                     <div class="row2">
-                        <h2 class="suspect-name">
-                            Mrs. Mathilda Harper
-                        </h2>
+                        <h3 style="text-align: center; color: azure;">The Ex-wife</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
+                                Matilda Harper
+                            </h2>
                         <button type="button">Click here for more information!</button>
                     </div>        
                 </div>
@@ -133,11 +136,12 @@
                 <div class="container">
                     <div class="col">
                         <div class="row1">
-                            <img src="assets/images/Theo Walsh.jpeg" alt="Theo Walsh" class="suspect-card">
+                            <img src="assets/images/Theo Walsh.jpeg" style="height: 300px; width: 350px;" alt="Theo Walsh" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h2 class="suspect-name">
-                                Mr Cruel
+                            <h3 style="text-align: center; color: azure;">The Store Attendant</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
+                                Theo Walsh
                             </h2>
                             <button type="button">Click here for more information!</button>
                         </div>        
@@ -148,7 +152,7 @@
                 <div class="container">
                     <div class="col">
                         <div class="row1">
-                            <img src="assets/images/zodiac.jpg" alt="Mr Cruel" class="suspect-card">
+                            <img src="assets/images/zodiac.jpg" style="height: 300px; width: 350px;" alt="Mr Cruel" class="suspect-card">
                         </div>
                         <div class="row2">
                             <h2 class="suspect-name">
@@ -163,7 +167,7 @@
             <div class="container">
                 <div class="col">
                     <div class="row1">
-                        <img src="assets/images/hoodie 2.jpg" alt="Mr Cruel" class="suspect-card">
+                        <img src="assets/images/hoodie 2.jpg" style="height: 300px; width: 350px;" alt="Mr Cruel" class="suspect-card">
                     </div>
                     <div class="row2">
                         <h2 class="suspect-name">
