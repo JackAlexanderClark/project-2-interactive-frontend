@@ -6,19 +6,15 @@
 1. 
 
 ### Themes and Design
-1. The primary design theme is a painting frame border to illustrate the artistic purposes - it is present throughout to provide continuity.
-2. Similarly, the colours have been kept to a basic and consistent pallete. Such as light blue (#add8e6) and dark blue (#410cd3).
-3. Another design philosophy was to only use a single h1 tag for each html page for aesthetics and to make important information prominant. 
-4. Finally, the other design pillar was that of simplicity - there is a biography, an interactive gallery and a shop with a contact form to directly contact the artist with an item request, feedback or to purchase an item chosen from the gallery.
-
+1. 
 ### Features
-1. Interactive elements such as; navigation bars and scrollable gallery.
-2. Despite JavaScript not being a required technology for this project, for user intuition I included a javascript function that called a google maps API, this shows the visitor Tintagel in Cornwall. This will further add immersion for the environment that inspired the art. Google maps API key: AIzaSyBqfLotXxWXWLztXjqJeCByX2v9FjqV16s.
+1. 
 
 ## Technologies Used
 1. HTML5
 2. CSS3
 3. JavaScript
+4. jQuery library
 
 ## Frameworks and Libraries
 1. Bootstrap 4
