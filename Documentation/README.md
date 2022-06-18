@@ -1,11 +1,9 @@
 # README DOCUMENTATION
 
-# Milestone Project 1 - User Centric Frontend Development
+# Milestone Project 2 - Interactive Frontend Application
 
 ### (UX) First time visitors
-1. First time visitors should immediately understand the purpose of the website. It should clearly represent an art gallery and shop to purchase paintings and cards.
-2. It should be very simplistic to navigate between the different pages; home, gallery and the shop.
-3. I have integrated a YouTube video from my channel, this demonstrates Tintagel's beautiful coast-line to immerse the visitor in the landscape and mindset.
+1. 
 
 ### Themes and Design
 1. The primary design theme is a painting frame border to illustrate the artistic purposes - it is present throughout to provide continuity.

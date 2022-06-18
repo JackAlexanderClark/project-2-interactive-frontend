@@ -40,7 +40,17 @@ function checkGuess() {
   };
 
 // jQuery popup text function
+// fadeIn method takes in 3 paramereters; speed, easing and callback.
+// callback function after
+$('#question-fade-in').click(function (){
+  $(this).fadeIn("slow", "linear", function ())
+});
 
-//function toggleText () {
-// $('#clue-1').toggle()
-//
+// potential idea on how to enlarge suspect card 
+$("button").click(function(){
+  $("div").animate({
+    left: '250px',
+    height: '+=150px',
+    width: '+=150px'
+  });
+}); 
