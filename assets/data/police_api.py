@@ -4,8 +4,18 @@
 # could make player make an api call to evaluate percentages of crime stats
 # XMLHttprequst
 
+import requests
 from police_api import PoliceAPI
 api = PoliceAPI(user_agent='cops-and-robbers/9.9.9', timeout=60)
 
 print(api)
+ 
+url = "https://jgentes-crime-data-v1.p.rapidapi.com/crime"
+querystring = {"lat":"37.757815","long":"-122.5076392","startdate":"9/19/2015","enddate":"9/25/2015"}
+headers = {
+    'x-rapidapi-key': "cJvLRNK0GfdM9WSMbQe3inU7REn8JVy5",
+    'x-rapidapi-host': "jgentes-Crime-Data-v1.p.rapidapi.com"
+    }
+response = requests.request("GET", url, headers=headers, params=querystring)
+print(response.text)
 

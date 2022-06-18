@@ -13,6 +13,21 @@ html {
     border: 7px solid black;
 }
 
+/* Navigation bar */
+.navbar {
+        display: inline;
+        float: left;
+        background-color: #dddddd;
+        list-style-type: none;
+}
+
+.active {
+    display: block;
+    background-color: #ecc1e1;
+    position: relative;
+    border-style: dashed;
+}
+
 h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -38,19 +53,19 @@ p {
 }
 
 .container {
-    padding: 20px;
+    padding: 10px;
     border: solid darkgrey 2px;
 }
 
 .suspect-card {
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 350px;
 }
 
 .suspect-name {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 25px;
     color: whitesmoke;
 }
 

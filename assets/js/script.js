@@ -16,10 +16,11 @@ $(document).ready(function(){
 });
 
 // Enter player name to return with your answer
-//var yourName = window.prompt("Enter your name: "); 
+// var yourName = window.prompt("Enter your name: "); 
 alert("Your name is " + yourName);
 
-//const correctSuspect = suspect1;
+// const correctSuspect = suspect9;
+// vicar is the correct suspect
 
 let attempts = 0;
 document.getElementById("guessChoice").onclick = checkGuess();

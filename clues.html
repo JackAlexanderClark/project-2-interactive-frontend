@@ -15,6 +15,27 @@
   </head>
   <body background="assets/images/black-board background.jpg">
 
+    <!-- Navigation bar -->
+    <section class="right-nav-bar">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+              <i class="fas fa-map-signs"></i> Offcanvas right 
+          </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+              <i class="fas fa-map-signs"></i>
+              <ul class="navbar">
+                  <li><a href="suspects.html">Suspects</a></li>
+                  <li><a class="active" href="clues.html">Clues</a></li>>
+              </ul>
+          </div>
+          </div>
+  </section>
+
     <section class="title">
         <h1>Police Suspect Game</h1>
     </section>
@@ -25,10 +46,11 @@
               
                 <h3>Clues <i class="fa-solid fa-envelope"></i></h3>
                   <div id="clue-1">
-                    <h4>Ransom Note <i class="fa-solid fa-note-sticky"></i></h4>
+                    <h4>Ransom Note</h4>
+                    <button type="button">Click here for more information!</button>
                   </div>
 
-                  <div>
+                  <div id="clue-2">
                     <h4>CCTV image <i class="fa-solid fa-camera-cctv"></i></h4>
                     <button type="button">Click here for more information!</button>
                   </div>

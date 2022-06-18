@@ -3,7 +3,7 @@
 # Milestone Project 2 - Interactive Frontend Application
 
 ### (UX) First time visitors
-1. 
+1. The 
 
 ### Themes and Design
 1. 
