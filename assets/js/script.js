@@ -5,10 +5,14 @@ $(document).ready(function(){
 const logReady = "FUCKING READY CUNT SAKE";
 console.log(logReady);
 
+function dateClick() {
+  document.getElementById('date').innerHTML = "You clicked me and i'm ready";
+};
+
 // investigate correct syntax for jq 3.6
-$(window).load(function (){
-  $(".question-fade-in").fadeIn("slow", "linear").fadeOut("slow")
-});
+//$(window).load(function (){
+//  $(".question-fade-in").fadeIn("slow", "linear").fadeOut("slow")
+//});
 
 
 $(document).ready(function(){

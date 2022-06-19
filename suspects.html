@@ -46,7 +46,8 @@
             </div>
     </section>
 
-    <!-- Rules and crime explaination for players ADD TO NAVBAR? -->
+    <!-- Rules and crime explaination for players -->
+    <!-- Create javascript to reveal text from button show/hide -->
     <section>
         <div class="container">
             <div class="row">
@@ -85,6 +86,14 @@
         <h3 style="color:antiquewhite; padding: 15px;">Detective Hudson has drawn 9 composite sketches of the suspects. Please take a look at them. <br><br> Do you remember them?</h1>
     </section>
 
+    <script>
+        function dateClick() {
+            document.getElementById('date').innerHTML = "You clicked me and i'm ready";
+            };
+    </script>
+    <button onclick="dateClick()"></button>
+    <h3 id="date"></h3>
+
     <!-- 3 x 3 grid to contain 9 suspect cards -->
     <!-- keep story cards short and not verbose for player interest -->
     <div class='container-fluid'>
@@ -100,7 +109,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Dr. Finchley Nightingale
                             </h2>
-                            <button type="button">Click here for more information!</button>
+                            <button type="button">Click here for profile:</button>
                         </div>        
                     </div>
                 </div>
@@ -116,7 +125,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Nigel Rochdale
                             </h2>
-                            <button type="button">Click here for more information!</button>
+                            <button type="button">Click here for profile:</button>
                         </div>        
                     </div>
                 </div>
@@ -132,7 +141,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Matilda Harper
                             </h2>
-                        <button type="button">Click here for more information!</button>
+                        <button type="button">Click here for profile:</button>
                     </div>        
                 </div>
             </div>
@@ -149,7 +158,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Theo Walsh
                             </h2>
-                            <button type="button">Click here for more information!</button>
+                            <button type="button">Click here for profile:</button>
                         </div>        
                     </div>
                 </div>
@@ -165,7 +174,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Mrs. Eleanor Plumb
                             </h2>
-                            <button type="button">Click here for more information!</button>
+                            <button type="button">Click here for profile:</button>
                         </div>        
                     </div>
                 </div>
@@ -181,7 +190,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Mr. Anton Harris
                             </h2>
-                        <button type="button">Click here for more information!</button>
+                        <button type="button">Click here for profile:</button>
                     </div>        
                 </div>
             </div>
@@ -193,9 +202,13 @@
         </div>
     </div>
 
+    <div>
+        <h2 style="text-align: center; color: azure;">Who commited this crime?</h2>
+    </div>
+
     <!-- Calls the guess function, 2 guesses available per round -->
     <section>
-        <h2>Chose your main suspect:</h2>
+        <h2 style="text-align: center; color: azure;">Chose your main suspect:</h2>
             <p>Once you have analysed the evidence police report. Think carefully before entering their full name into the box below and pressing enter.</p>
                 <input type="text">
                 <input type="submit">
