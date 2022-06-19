@@ -11,15 +11,15 @@ $(window).load(function (){
 });
 
 
-//$(document).ready(function(){
-//  $("button").click(function(){
-//    var div = $("div");
-//    div.animate({height: '300px', opacity: '0.4'}, "slow");
-//    div.animate({width: '300px', opacity: '0.8'}, "slow");
-//    div.animate({height: '100px', opacity: '0.4'}, "slow");
-//   div.animate({width: '100px', opacity: '0.8'}, "slow");
-//  });
-//});
+$(document).ready(function(){
+  $("button").click(function(){
+   var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+   div.animate({width: '100px', opacity: '0.8'}, "slow");
+  });
+});
 
 // Enter player name to return with your answer
 //var yourName = window.prompt("Enter your name: "); 
@@ -33,7 +33,7 @@ document.getElementById("guessChoice").onclick = checkGuess();
   
 function checkGuess() {
     let playerGuess = guess.value;
-    if (attempts === 3) {
+    if (attempts === 2) {
       feedback.textContent = "Game over! Failed. You have used all 3 guesses!";
       console.log("GAME FAILED 3 GUESSES USED");
       return; 

@@ -26,7 +26,7 @@
     </section>
 
     <!-- Creating bootstrap offcanvas right navbar -->
-    <section class="right-nav-bar">
+    <section style="padding: 15px; text-align: center;" class="right-nav-bar">
         <buttons class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click here to navigate between different areas:</button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
@@ -51,10 +51,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>
+                    <h4 style="text-align: center; color: crimson;">
                         How to play the Game <i class="fas fa-dice"></i>
-                    </h3>
-                    <ol>
+                    </h4>
+                    <ol style="color: whitesmoke;">
                         <li>Firstly, read up on the events of the crime, learn and memorise the circumstances.</li>
                         <li>Next, the police have given you their 9 suspects linked to the crime.</li>
                         <li>By navigating through the suspects backstories, the clues and witness statments - you must pick your main suspect.</li>
@@ -63,10 +63,10 @@
                     </ol>
                 </div>
                 <div class="col-md-6">
-                    <h3>
+                    <h4 style="text-align: center; color: crimson;">
                         The Crime <i class="fa-solid fa-magnifying-glass"></i></i>
-                    </h3>
-                    <ul>
+                    </h4>
+                    <ul style="color: whitesmoke;">
                         <li>At approximately 1:30am your house was petrol bombed.</li>
                         <li>You were knocked unconcious, you've been in a coma - your memories are missing.</li>
                         <li>A figure was seen loitering the area, at 12:00am.</li>
@@ -80,6 +80,10 @@
         </div>
     </section>
 
+    <section class="title">
+        <h3 style="color:antiquewhite; padding: 15px;">Detective Squire has drawn 9 composite sketches of the suspects. Please take a look at them. <br><br> Do you remember them?</h1>
+    </section>
+
     <!-- 3 x 3 grid to contain 9 suspect cards -->
     <div class='container-fluid'>
         <div class='row'>
@@ -90,7 +94,7 @@
                             <img src="assets/images/Dr Finchley Nightingale.jpeg" style="height: 300px; width: 350px;" alt="Dr. Finchley Nightingale" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h3 style="text-align: center; color: azure;">The Psychiatrist</h3>
+                            <h3 style="text-align: center; color: azure; text-decoration: underline;">The Psychiatrist</h3>
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Dr. Finchley Nightingale
                             </h2>
@@ -106,7 +110,7 @@
                             <img src="assets/images/Nigel Rochdale Homeless Sketch.jpeg" style="height: 300px; width: 350px;" alt="Nigel Rochdale" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h3 style="text-align: center; color: azure;">The Homeless Man</h3>
+                            <h3 style="text-align: center; color: azure; text-decoration: underline;">The Homeless Man</h3>
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Nigel Rochdale
                             </h2>
@@ -122,7 +126,7 @@
                             <img src="assets/images/Matilda Harper.jpeg" style="height: 300px; width: 350px;" alt="Mrs. Matilda Harper" class="suspect-card">
                         </div>
                     <div class="row2">
-                        <h3 style="text-align: center; color: azure;">The Ex-wife</h3>
+                        <h3 style="text-align: center; color: azure; text-decoration: underline;">The Ex-wife</h3>
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Matilda Harper
                             </h2>
@@ -139,7 +143,7 @@
                             <img src="assets/images/Theo Walsh.jpeg" style="height: 300px; width: 350px;" alt="Theo Walsh" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h3 style="text-align: center; color: azure;">The Store Attendant</h3>
+                            <h3 style="text-align: center; color: azure; text-decoration: underline;">The Store Attendant</h3>
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Theo Walsh
                             </h2>
@@ -155,8 +159,9 @@
                             <img src="assets/images/zodiac.jpg" style="height: 300px; width: 350px;" alt="Mr Cruel" class="suspect-card">
                         </div>
                         <div class="row2">
-                            <h2 class="suspect-name">
-                                The Zodiac
+                            <h3 style="text-align: center; color: azure; text-decoration: underline;">The Retired Teacher</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
+                                Mrs. Eleanor Plumb
                             </h2>
                             <button type="button">Click here for more information!</button>
                         </div>        
@@ -170,9 +175,10 @@
                         <img src="assets/images/hoodie 2.jpg" style="height: 300px; width: 350px;" alt="Mr Cruel" class="suspect-card">
                     </div>
                     <div class="row2">
-                        <h2 class="suspect-name">
-                            Homeless man
-                        </h2>
+                            <h3 style="text-align: center; color: azure; text-decoration: underline;">The Butcher</h3>
+                            <h2 style="text-align: center; color: azure;" class="suspect-name">
+                                Mr. Anton Harris
+                            </h2>
                         <button type="button">Click here for more information!</button>
                     </div>        
                 </div>
