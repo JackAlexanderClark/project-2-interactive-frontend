@@ -2,7 +2,7 @@ $(document).ready(function(){
     console.log("Document fully loaded - jQuery is ready");
   });
 
-const logReady = "FUCKING READY CUNT SAKE";
+const logReady = "Testing ready";
 console.log(logReady);
 
 function dateClick() {
