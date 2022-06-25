@@ -76,30 +76,42 @@
 
             <!-- Witness statements are clickable events that reveal information -->
             <div class="col-md-6">
+              <div class="row1">
                 <h3 style="color:antiquewhite">Witness Statements <i class="fa-solid fa-comment"></i></h3>
-
                 <script>
                   function witnessStatement1() {
                       document.getElementById('witness1').innerHTML = "At approximately 1:00am I was awoken by the screeching of tires...";
                       };
                 </script>
 
-                <div style="color:antiquewhite"></div>
+                <div style="color:antiquewhite">
                   <button onclick="witnessStatement1()">Witness Statement 1:</button>
                   <p id="witness1"></p>
-              </div>
-                <script>
-                  function witnessStatement2() {
-                      document.getElementById('witness2').innerHTML = "There were two men loitering outside the street, they looked suspicous...";
-                      };
-                </script>
-
-                <div style="color:antiquewhite"></div>
-                  <button onclick="witnessStatement2()">Witness Statement 2:</button>
-                  <p id="witness2"></p>
                 </div>
+              
+              </div>
 
-                
+              <div class="row2">
+                    <script>
+                      function witnessStatement2() {
+                          document.getElementById('witness2').innerHTML = "There were two men loitering outside the street, they looked suspicous...";
+                          };
+                    </script>
+                    <div style="color:antiquewhite">
+                      <button onclick="witnessStatement2()">Witness Statement 2:</button>
+                        <p id="witness2"></p>
+                    </div>
+              </div>
+
+              <div class="row2">
+                <h3>A crime scene sweep discovered these fingerprints:</h3>
+                  <img src="assets/images/fingerprints.jpg" alt="Fingerprint">
+                    <p>Click for closer look:</p>
+
+              </div>
+
+
+
 
             </div>
         </div>
