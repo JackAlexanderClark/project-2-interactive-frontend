@@ -108,7 +108,7 @@
                             <h2 style="text-align: center; color: azure;" class="suspect-name">
                                 Dr. Finchley Nightingale
                             </h2>
-                            <button type="button">Click here for profile:</button>
+                            <button type="button" class="profile">Click here for profile:</button>
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class='row'>
-                    <div class='col-xs-12 col-md-4'>
+                    <div class='col-xs-12 col-md-4' style="padding-right: 5px;">
                         <div class="container">
                             <div class="col">
                                 <div class="row1">
@@ -251,17 +251,33 @@
                 <p>Once you have analysed the evidence police report. Think carefully before entering their full name
                     into the box below and pressing enter.</p>
                 <input type="text">
-                <input type="submit">
+                <input type="submit" onclick="checkGuess();">
             </section>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
 
-                <!-- Modal content -->
+                <!-- Modal content, flask backend templating -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Some text in the Modal..</p>
+                    <h4>Some text in the Modal..<br>
+                        Name: [json.name[0]]<br>
+                        Age: [json.age[0]]<br>
+                        Profession: [json.profession[0]]
+                    </h4>
                 </div>
+                
+                <!-- Unique modal text for each profile -->
+                
+                <!--<div id="suspect-1-modal">
+                    <span>Name: Dr. Finchley</span>
+                    <h4>
+                        Age: 51
+                        Employment: Clinical Psychiatrist
+                    </h4>
+                </div>
+                -->
+            
 
             </div>
             <script src="https://code.jquery.com/jquery-3.6.0.js"

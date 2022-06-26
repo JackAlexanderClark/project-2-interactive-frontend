@@ -16,6 +16,7 @@ function showModal() {
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
+
   modal.style.display = "block";
 
   // When the user clicks on <span> (x), close the modal
@@ -30,6 +31,15 @@ function showModal() {
     }
   }
 }
+
+// calling data from suspects.json
+obj = '{"name":"John", "age":30, "car":null}'
+let suspectName = obj.name;
+console.log(suspectName);
+
+
+
+
 
 
 
@@ -95,5 +105,16 @@ $("button").click(function(){
     width: '+=150px'
   });
 });}
+*/
 
+// Taking json data through XML httprequest pull from suspects.json
+/*
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myArr = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myArr[0];
+  }
+}
+xmlhttp.open("GET", "json_demo_array.txt", true);
+xmlhttp.send();
 */

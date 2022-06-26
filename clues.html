@@ -106,7 +106,7 @@
               <div class="row2">
                 <h3 style="color:antiquewhite">This fingerprint was discovered at the crime scene:</h3>
                   <img height ="300px" width="250px" src="assets/images/fingerprints.jpg" alt="Fingerprint">
-                    <p>Click for closer look:</p>
+                    <button type="button" class="profile">Click for closer look:</button>
               </div>
 
               <br>
@@ -114,15 +114,23 @@
               <div class="row2">
                 <h3 style="color:antiquewhite">This torch was found in the garden, with the light still turned on:</h3>
                   <img height ="300px" width="250px" src="assets/images/torch.jpg" alt="Torch">
-                    <p>Click for closer look:</p>
+                    <button type="button" class="profile">Click for closer look:</button>  
               </div>
-
-
-
-
             </div>
         </div>
     </div>
+
+    <!-- Clues modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content, flask backend templating -->
+      <div class="modal-content">
+          <span class="close">&times;</span>
+            <h4>Clues Modal..<br>
+                Clue 1: [json.clue[0]]<br>
+                Evidence: [json.evidence[0]]<br>
+            </h4>
+      </div>
 
   </body>
 </html>
