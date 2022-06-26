@@ -1,6 +1,8 @@
 // Script start, test DOM and jQuery are working
 $(document).ready(function () {
   console.log("Document fully loaded - jQuery is ready");
+  $(".title").fadeIn("slow");
+  
   let element = document.getElementsByClassName("profile");
 
   // element.addEventListener("click", showModal);
@@ -37,20 +39,22 @@ $("#flip").click(function() {
   $("#panel").slideDown("slow").click(function () {
     $(this).slideUp("slow");
   });
-
 });
 
 // Click for witness statement functions
 function witnessStatement1() {
   document.getElementById('witness1').innerHTML = "At approximately 1:00am I was awoken by the screeching of tires...";
-  $('witness1').onclick(function () {
-    $(this).hide("slow")
-  });
 };
 
 function witnessStatement2() {
   document.getElementById('witness2').innerHTML = "There were two men loitering outside the street, they looked suspicous...";
 };
+
+function witnessStatement3() {
+  document.getElementById('witness3').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedtat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+};
+
+
 
 
 
