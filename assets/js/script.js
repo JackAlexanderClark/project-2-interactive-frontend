@@ -1,49 +1,35 @@
 // Script start, test DOM and jQuery are working
-$(document).ready(function(){
-    console.log("Document fully loaded - jQuery is ready");
-    const element = document.querySelector("button");
+$(document).ready(function () {
+  console.log("Document fully loaded - jQuery is ready");
+  let element = document.getElementsByClassName("profile");
 
-    element.addEventListener("click", showModal);
+  // element.addEventListener("click", showModal);
+  for (let i = 0; i < element.length; i++) {
+    element[i].addEventListener("click", showModal);
+  }
 });
 
-//const logReady = "Testing ready";
-//console.log(logReady);
+function showModal() {
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
-//function dateClick() {
-//  document.getElementById('date').innerHTML = "You clicked me and i'm ready";
-//};
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
 
-// javascript text pop up 
-
-
-function showModal () {
-  alert(1);
-    // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-element.onclick = function() {
-  alert(1);
   modal.style.display = "block";
-  alert(2);
-}
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
     modal.style.display = "none";
   }
-}
-}
 
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
 
 
 
