@@ -54,6 +54,15 @@ span {
     font-weight: bold;
 }
 
+ul {
+    width: 300px;
+    height: 500px;
+}
+
+li {
+    padding: 55px;
+}
+
 .container-fluid {
     text-align: center;
     padding: 10px;

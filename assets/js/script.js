@@ -54,6 +54,11 @@ function witnessStatement3() {
   document.getElementById('witness3').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedtat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 };
 
+// Click for fingerprint information
+function fingerprintInfo() {
+  document.getElementById('fingerprintId').innerHTML = "Our scientific investigations have concluded that the fingerprint has a 2/3 chance of being female. Meaning the suspect is more likely to be female rather than male - however that does not imply that the suspect is definitely female, it could be a male just less likely."
+};
+
 
 
 
