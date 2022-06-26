@@ -30,12 +30,27 @@ function showModal() {
       modal.style.display = "none";
     }
   }
-}
+};
 
-// calling data from suspects.json
-obj = '{"name":"John", "age":30, "car":null}'
-let suspectName = obj.name;
-console.log(suspectName);
+// jQuery crime description panel drop down
+$("#flip").click(function() {
+  $("#panel").slideDown("slow").click(function () {
+    $(this).slideUp("slow");
+  });
+
+});
+
+// Click for witness statement functions
+function witnessStatement1() {
+  document.getElementById('witness1').innerHTML = "At approximately 1:00am I was awoken by the screeching of tires...";
+  $('witness1').onclick(function () {
+    $(this).hide("slow")
+  });
+};
+
+function witnessStatement2() {
+  document.getElementById('witness2').innerHTML = "There were two men loitering outside the street, they looked suspicous...";
+};
 
 
 
