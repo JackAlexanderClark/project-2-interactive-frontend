@@ -51,7 +51,11 @@ function witnessStatement2() {
 };
 
 function witnessStatement3() {
-  document.getElementById('witness3').innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedtat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  document.getElementById('witness3').innerHTML = "Lorulpa qui officia deserunt mollit anim id est laborum."
+};
+
+function witnessStatement4() {
+  document.getElementById('witness4').innerHTML = "Elit, sedtat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 };
 
 // Click for fingerprint information
@@ -59,11 +63,10 @@ function fingerprintInfo() {
   document.getElementById('fingerprintId').innerHTML = "Our scientific investigations have concluded that the fingerprint has a 2/3 chance of being female. Meaning the suspect is more likely to be female rather than male - however that does not imply that the suspect is definitely female, it could be a male just less likely."
 };
 
-
-
-
-
-
+// acordian 
+$(function() {
+  $("#accordion").accordion();
+});
 
 
 
@@ -83,21 +86,22 @@ $(document).ready(function(){
   });
 });
 
-// Enter player name to return with your answer
-//var yourName = window.prompt("Enter your name: "); 
-//alert("Your name is " + yourName);
 
-// const correctSuspect = suspect9;
-// vicar is the correct suspect
-
+/*
+*	The vicar is the correct suspect == suspect 7
+*	1 or 2 guesses permitted per round 
+*	Need to build a timer
+*/
+/*
 let attempts = 0;
+let playerInput = input();
 document.getElementById("guessChoice").onclick = checkGuess();
 
 function checkGuess() {
     let playerGuess = guess.value;
     if (attempts === 2) {
-      feedback.textContent = "Game over! Failed. You have used all 3 guesses!";
-      console.log("GAME FAILED 3 GUESSES USED");
+      feedback.textContent = "Failed. You have used all 3 guesses! You chose '{playerInput}'.";
+      console.log("Testing - game failed");
       return; 
     }
     if (playerGuess === suspect8) {
@@ -130,7 +134,6 @@ $("button").click(function(){
   });
 });}
 */
-
 // Taking json data through XML httprequest pull from suspects.json
 /*
 const xmlhttp = new XMLHttpRequest();
@@ -142,3 +145,4 @@ xmlhttp.onload = function() {
 xmlhttp.open("GET", "json_demo_array.txt", true);
 xmlhttp.send();
 */
+
