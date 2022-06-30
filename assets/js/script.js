@@ -75,6 +75,8 @@ $(function() {
 *$(".question-fade-in").fadeIn("slow", "linear").fadeOut("slow")
 *});
 
+*/
+
 
 $(document).ready(function(){
   $("button").click(function(){
@@ -124,16 +126,9 @@ function checkGuess() {
 // jQuery popup text function
 // fadeIn method takes in 3 paramereters; speed, easing and callback.
 // callback function after
-
-// potential idea on how to enlarge suspect card 
-$("button").click(function(){
-  $("div").animate({
-    left: '250px',
-    height: '+=150px',
-    width: '+=150px'
-  });
-});}
 */
+
+
 // Taking json data through XML httprequest pull from suspects.json
 /*
 const xmlhttp = new XMLHttpRequest();
