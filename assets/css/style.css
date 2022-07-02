@@ -85,6 +85,16 @@ li {
     color: whitesmoke;
 }
 
+.buttonOver {
+    color: palevioletred;
+    background-color: #ecc1e1;
+}
+
+.button {
+    color: azure;
+    background-color: #ecc1e1;
+}
+
 .right-nav-bar {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: oblique;

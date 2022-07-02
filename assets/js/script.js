@@ -74,16 +74,12 @@ $(function() {
 });
 
 // button changes on mouse hover event
-$(".button").mouseenter(function () {
-	$(".button").css("color", "pink");
-	$(".button").css("background-color", "yellow");
-})
-
-$(".button").mouseleave(function () {
-	$(".button").css("color", "green");
-	$(".button").css("background-color", "orange");
-})
-
+$(".button").mouseover(function (e) {
+	$(this).removeClass().addClass("buttonOver");
+	}).mouseout(function() {
+		$(this).removeClass().addClass("button");
+	});
+	console.log("mouse over event working");
 
 
 /*
