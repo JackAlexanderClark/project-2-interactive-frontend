@@ -1,7 +1,12 @@
-// Script start, test DOM and jQuery are working
+/*
+*	Need to add tab indentation universally
+*/
+
+// script start, test DOM and jQuery are working
 $(document).ready(function () {
-  console.log("Document fully loaded - jQuery is ready");
   $(".title").fadeIn("slow");
+  console.log("Document fully loaded - jQuery is ready");
+
   
   let element = document.getElementsByClassName("profile");
 
@@ -41,7 +46,7 @@ $("#flip").click(function() {
   });
 });
 
-// Click for witness statement functions
+// click for witness statement functions
 function witnessStatement1() {
   document.getElementById('witness1').innerHTML = "At approximately 1:00am I was awoken by the screeching of tires...";
 };
@@ -58,15 +63,26 @@ function witnessStatement4() {
   document.getElementById('witness4').innerHTML = "Elit, sedtat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 };
 
-// Click for fingerprint information
+// click for fingerprint information
 function fingerprintInfo() {
-  document.getElementById('fingerprintId').innerHTML = "Our scientific investigations have concluded that the fingerprint has a 2/3 chance of being female. Meaning the suspect is more likely to be female rather than male - however that does not imply that the suspect is definitely female, it could be a male just less likely."
+	document.getElementById('fingerprintId').innerHTML = "Our scientific investigations have concluded that the fingerprint has a 2/3 chance of being female. Meaning the suspect is more likely to be female rather than male - however that does not imply that the suspect is definitely female, it could be a male just less likely."
 };
 
 // acordian 
 $(function() {
-  $("#accordion").accordion();
+	$("#accordion").accordion();
 });
+
+// button changes on mouse hover event
+$(".button").mouseenter(function () {
+	$(".button").css("color", "pink");
+	$(".button").css("background-color", "yellow");
+})
+
+$(".button").mouseleave(function () {
+	$(".button").css("color", "green");
+	$(".button").css("background-color", "orange");
+})
 
 
 
@@ -74,19 +90,6 @@ $(function() {
 *$(window).load(function (){
 *$(".question-fade-in").fadeIn("slow", "linear").fadeOut("slow")
 *});
-
-*/
-
-
-$(document).ready(function(){
-  $("button").click(function(){
-   var div = $("div");
-    div.animate({height: '300px', opacity: '0.4'}, "slow");
-    div.animate({width: '300px', opacity: '0.8'}, "slow");
-    div.animate({height: '100px', opacity: '0.4'}, "slow");
-   div.animate({width: '100px', opacity: '0.8'}, "slow");
-  });
-});
 
 
 /*
